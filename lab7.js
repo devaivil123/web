@@ -5,27 +5,25 @@ function showAlert() {
     let userSex = document.getElementById('sex').value;
 
     let greeting;
-    if(userAge <=17) {
+    if(userAge <= 17) {
         greeting = 'Здравствуй, ';
         if(userSex == 'female') {
-            greeting += 'девчонка ';
+            greeting += 'девочка ';
         }
         else {
-            greeting += 'мальчишка ';
+            greeting += 'мальчик ';
         }
     }
     else {
         greeting = 'Здравствуйте, ';
         if(userSex == 'female') {
             greeting += 'госпожа ';
-        } 
-        else {
-            greeting += 'господин ';
         }
-     }
-    alert(greeting + userName + '' + userSurname + '\n'
-        + 'Ваш возраст: ' + userAge);
-
+            else {
+                greeting += 'господин ';
+            }
+        }
+    alert(greeting + userName + ' ' + userSurname + '\n' + 'Ваш возраст: ' + userAge);
     let r = Math.round(Math.random()*255);
     let g = Math.round(Math.random()*255);
     let b = Math.round(Math.random()*255);
@@ -45,6 +43,6 @@ function makeStairs() {
         let n = i+1;
         steps[i].style.left = (30 + 10*i) + 'px';
         steps[i].style.top = (300 + 80*i) + 'px';
-        steps[i].innerHTML = 'Блок номер ' + i;
+        steps[i].innerHTML = 'Блок номер ' + n;
     }
 }
