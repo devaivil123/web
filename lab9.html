@@ -1,26 +1,35 @@
 <!DOCTYPE html>
 <html>
-    <head>
-        <meta charset="utf-8">
-        <title>Шевчук Иван. Демидов Евгений ФБИ-02. Лабораторная работа 9</title>
-        <link rel="stylesheet" href="laba9.css" type="text/css">
-        <script src="laba9.js"></script>
-    </head>
-    <body>
-        <div class="header">
-            Шевчук Демидов
-        </div>
+<head>
+    <meta charset="UTF-8">
+    <title>Шевчук Демидов. ФБИ-02. Лабораторная работа 9</title>
+    <link rel="stylesheet" href="lab9.css" type="text/css">
+    <script src="lab9.js"></script>
+</head>
+<body>
+    <div class="header">
+        Шевчук Демидов
+    </div>
 
-        <div class="content">
-            <button onclick="Click1(this)">Щелчок</button>
-            <button onclick="Click2(this)">Имя Иван</button>
-            <button onclick="Click3(this)">Имя Евгений</button>
-            <button onclick="Click4(this)">Нажми меня</button>
+    <div class="content">
+        <div>
+            <button onclick="click1(this)">Щелчок</button>
+            <button onclick="click2(this)">Иван</button>
+            <button onclick="click3(this)">Евгений</button>
+            <button onclick="click4(this)">Нажми меня</button>
+            
             <div id="coords">mouse</div>
-        </div>
 
-        <div class="footer">
-            Факультет Бизнеса, ФБИ-02, 3 курс, 2022г.
+            <div>
+                <input type="text" value="один" onfocus="fokyc(this)">
+                <input type="text" value="два" onfocus="fokyc(this)">
+                <input type="text" value="три" onfocus="fokyc(this)">
+            </div>
         </div>
-    </body>
+    </div>
+
+    <div class="footer">
+        Факультет бизнеса, ФБИ-02, 3 курс, 2022
+    </div>
+</body>
 </html>
