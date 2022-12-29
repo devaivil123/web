@@ -6,38 +6,44 @@
         <link rel="stylesheet" href="lab6.css" type="text/css">
         <script>
             console.log('Всем привет!!!');
+
             let x = 33;
             let s = 'яблоки';
-            let if = 17;
+            //let if = 17;
             console.log('x=', x, 's=', s);
         </script>
+        <script src="lab6.js"></script>
     </head>
     <body>
         <div class="header">
-           Шевчук Демидов
+            <div id="student"> Шевчук Демидов </div>
+            <div class="language">
+                <input type="button" value="ru" onclick="setRussian()">
+                <input type="button" value="en" onclick="setEnglish()">
+            </div>
         </div>
 
         <div class="content">
             <form>
                 <div id="user-data">
                     <div>
-                        <span>Ваше имя</span>: <input type="text">
+                        <span id="your-name">Ваше имя</span>: <input type="text" id="input-name" placeholder="Введите имя" onclick="showAlert()">
                     </div>
                     <div>
-                        <span>Ваша фамилия</span>: <input type="text">
+                        <span id="your-surname">Ваша фамилия</span>: <input type="text" id="input-surname" placeholder="Введите фамилию" onclick="showAlert()">
                     </div>
                     <div>
-                        <span>Ваш возраст</span>: <input type="number">
+                        <span id="your-age">Ваш возраст</span>: <input type="text" id="input-age" placeholder="Введите возраст">
                     </div>
                     <div>
-                        <input type="button" value="ок">
-                        <input type="reset" value="сброс">
+                        <input type="button" value="ок" id="ok-button" onclick="showAlert()">
+                        <input type="reset" value="сброс" id="reset-button">
                     </div>
                 </div>
             </form>
         </div>
 
-        <div class="footer">
+        <div class="footer" id="footer">
             Факультет Бизнеса. ФБИ-02. 2022
         </div>
     </body>
